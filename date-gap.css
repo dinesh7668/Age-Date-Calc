@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(45deg, #36682e,rgb(100, 65, 46),rgb(27, 27, 71));
+
+}
+h2{
+    font-weight: 700;
+    color: orangered;
+}
+.label{
+  color: blue;
+  font-weight: 700;
+}
+.container {
+    margin-bottom: 12rem;
+    background: linear-gradient(45deg, #354a54, #ffffff,rgb(5, 46, 5));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    width: 4rem;
+    margin: .5rem;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #0e31ad;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0 0 10px rgb(166, 17, 300);
+    animation: pulse 1s infinite alternate;
+
+
+}
+
+input:hover {
+    border-color: #7b1fa2;
+    box-shadow: 0 0 15px rgba(123, 31, 162, 1);
+    background-color: #e7e5f5;
+
+}
+
+input:focus {
+    border-color: #03a9f4;
+    box-shadow: 0 0 20px rgba(3, 169, 244, 1);
+    background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+    color: #000;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+} 
+
+button {
+    height: 3rem;
+    width: 7rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    background-color: orangered;
+    color: black;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgb(13, 185, 10);
+    transition: background-color 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+    animation: pulse 1s infinite alternate;
+
+}
+
+button:hover {
+    background-color: aquamarine;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(198, 48, 7);
+    color: rgb(25, 0, 255);
+
+
+}
+
+button:active {
+    color: black;
+    transform: scale(0.95);
+    box-shadow: 0 0 15px rgb(6, 26, 209);
+    background-color: rgb(209, 6, 178);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#result {
+    margin-top: 1.3rem;
+    /* font-size: 1.2rem; */
+    font-weight: 600;
+    color: rgb(1, 1, 182);
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* #result.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+ 
